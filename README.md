@@ -41,3 +41,6 @@
 #-	Fetch data only once a day
 
 #Comleted
+
+
+Note: Please use PHP > 5 and WordPress 5.* for reviewing the plugin 
