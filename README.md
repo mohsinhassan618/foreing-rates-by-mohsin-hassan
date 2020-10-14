@@ -43,4 +43,4 @@
 #Comleted
 
 
-Note: Please use PHP > 5 and WordPress 5.* for reviewing the plugin 
+Note: Please use PHP > 7.* and WordPress 5.* for reviewing the plugin 
