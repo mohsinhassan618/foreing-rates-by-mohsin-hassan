@@ -170,7 +170,7 @@ if(!class_exists('\Plugin\ForeingRate\ForeingRatesByMohsinHassan')){
                     do_action('forex_api_error',array( 'function_state' => get_defined_vars(),'exception' => false) );
                 }
 
-            } catch ( Exception $ex ) {
+            } catch ( \Exception $ex ) {
                 do_action('forex_api_error',array( 'function_state' => get_defined_vars(),'exception' => $ex) );
             }
 
