@@ -150,13 +150,15 @@ if(!class_exists('\Plugin\ForeingRate\ForeingRatesByMohsinHassan')){
             }
 
             try {
-                $data = [];
+                if(!is_array($data)){
+                    $data = [];
+                }
+                @$data[$base];
                 $response      = wp_remote_get( $URL,array( 'timeout'=> 20) );
                 $response_code = wp_remote_retrieve_response_code( $response );
 
                 if( !is_wp_error( $response ) && $response_code == 200 ){
                     $body = wp_remote_retrieve_body( $response );
-                    @$data[$base];
                     $data[$base] = (array) json_decode($body);
                     $data[$base]['rates'] = (array)$data[$base]['rates'];
 
